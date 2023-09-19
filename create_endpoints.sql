@@ -10,5 +10,5 @@ CREATE TABLE hold_endpoints (
   UNIQUE INDEX(`endpoint_path`, `verb`)
 );
 
-INSERT INTO endpoints(endpoint_path, verb, code, headers, body) 
+INSERT INTO hold_endpoints(endpoint_path, verb, code, headers, body) 
 VALUES("greeting", 'GET', 200, NULL, '{"message":"Hello, world"}');
