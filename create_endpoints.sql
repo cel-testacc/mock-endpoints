@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS hold_endpoints;
-CREATE TABLE hold_endpoints (
+DROP TABLE IF EXISTS endpoints;
+CREATE TABLE endpoints (
   id INT AUTO_INCREMENT NOT NULL,
   endpoint_path VARCHAR(100) NOT NULL,
   verb VARCHAR(10) NOT NULL,
@@ -10,5 +10,5 @@ CREATE TABLE hold_endpoints (
   UNIQUE INDEX(`endpoint_path`, `verb`)
 );
 
-INSERT INTO hold_endpoints(endpoint_path, verb, code, headers, body) 
+INSERT INTO endpoints(endpoint_path, verb, code, headers, body) 
 VALUES("greeting", 'GET', 200, NULL, '{"message":"Hello, world"}');
