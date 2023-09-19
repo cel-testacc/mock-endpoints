@@ -1,3 +1,5 @@
+CREATE DATABASE hold_endpoints;
+
 DROP TABLE IF EXISTS endpoints;
 CREATE TABLE endpoints (
   id INT AUTO_INCREMENT NOT NULL,
