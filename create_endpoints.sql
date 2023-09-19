@@ -11,4 +11,4 @@ CREATE TABLE endpoints (
 );
 
 INSERT INTO endpoints(endpoint_path, verb, code, headers, body) 
-VALUES("greeting", 'GET', 200, '{}', '{"message":"Hello, world"}');
+VALUES("greeting", 'GET', 200, NULL, '{"message":"Hello, world"}');
